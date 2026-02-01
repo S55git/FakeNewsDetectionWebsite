@@ -13,7 +13,33 @@ Trained on a massive dataset of over **100,000+ articles** (including 2024-2025 
 * **Context Aware:** Specifically trained to handle **Indian Context**, **Technology**, and **Modern Geopolitics** (2025 data).
 * **High Accuracy:** Uses a Linear Support Vector Classifier (LinearSVC) which outperforms standard Naive Bayes models for text classification.
 * **Interactive UI:** Built with **Streamlit** for a clean, responsive experience (Dark Mode supported).
-* **Visual Analytics:** Displays confusion matrices and performance metrics after training.
+
+---
+
+## 📊 Model Performance & Representation
+
+The model is evaluated on a 25% test split. Below are the actual visualizations generated during the latest training session.
+
+### 1. Confusion Matrix
+This matrix shows the number of correct vs. incorrect predictions.
+* **True Positives (Real):** Correctly predicted Real news.
+* **True Negatives (Fake):** Correctly predicted Fake news.
+
+![Confusion Matrix](confusion_matrix.png)
+
+*(If the image is not loading, make sure `confusion_matrix.png` is uploaded to your GitHub repository)*
+
+### 2. Performance Metrics
+A graphical representation of Accuracy, Precision, Recall, and F1-Score.
+
+![Performance Metrics](bar_chart.png)
+
+| Metric | Score |
+| :--- | :--- |
+| **Accuracy** | **~99%** |
+| **Precision** | **~99%** |
+| **Recall** | **~99%** |
+| **F1 Score** | **~99%** |
 
 ---
 
