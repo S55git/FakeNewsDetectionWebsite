@@ -1,0 +1,51 @@
+# 🕵️‍♂️ Fake News Detection System
+
+A Machine Learning powered web application that detects whether a news article is **Real** or **Fake**.  
+Trained on a massive dataset of over **100,000+ articles** (including 2024-2025 Indian News & AI-generated fake news) using **LinearSVC** and **TF-IDF Vectorization** to achieve high accuracy.
+
+## 🚀 Live Demo
+**[Click Here to Try the Web App](https://your-app-url-here.streamlit.app/)** *(Replace this link with your actual Streamlit Cloud URL)*
+
+---
+
+## 📌 Features
+* **Real-time Detection:** Instantly classifies news articles as "Real" or "Fake".
+* **Context Aware:** Specifically trained to handle **Indian Context**, **Technology**, and **Modern Geopolitics** (2025 data).
+* **High Accuracy:** Uses a Linear Support Vector Classifier (LinearSVC) which outperforms standard Naive Bayes models for text classification.
+* **Interactive UI:** Built with **Streamlit** for a clean, responsive experience (Dark Mode supported).
+* **Visual Analytics:** Displays confusion matrices and performance metrics after training.
+
+---
+
+## 🛠️ Tech Stack
+* **Language:** Python 3.12+
+* **Machine Learning:** Scikit-Learn (LinearSVC, TF-IDF)
+* **Data Processing:** Pandas, NumPy, Regular Expressions (Re)
+* **Web Framework:** Streamlit
+* **Serialization:** Joblib
+
+---
+
+## 📂 Project Structure
+```bash
+FAKE-NEWS-DETECTOR/
+│
+├── app.py                   # The Main Website (Streamlit App)
+├── train_model.py           # ML Training Script (Generates .pkl files)
+├── merge_data.py            # Data Cleaning & Merging Script
+├── requirements.txt         # List of dependencies for cloud deployment
+├── README.md                # Project Documentation
+├── .gitignore               # Files to ignore (CSVs, large files)
+│
+├── models/                  # Saved ML Models (Auto-generated)
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+├── data/                    # Raw Data (Not uploaded to Git)
+│   ├── custom_2025.csv      # Custom modern datasets
+│   ├── gen_ai.csv           # AI-generated fake news
+│   └── final_master_dataset.csv
+│
+└── images/                  # Visualizations
+    ├── confusion_matrix.png
+    └── bar_chart.png
